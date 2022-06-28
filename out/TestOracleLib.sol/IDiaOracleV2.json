@@ -1,0 +1,2548 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "name": "getValue",
+      "outputs": [
+        {
+          "internalType": "uint128",
+          "name": "",
+          "type": "uint128"
+        },
+        {
+          "internalType": "uint128",
+          "name": "",
+          "type": "uint128"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "getValue(string)": "960384a0"
+  },
+  "ast": {
+    "absolutePath": "test/TestOracleLib.sol",
+    "id": 21256,
+    "exportedSymbols": {
+      "DSTest": [
+        1786
+      ],
+      "DiaOracleLib": [
+        21068
+      ],
+      "IDiaOracleV2": [
+        21086
+      ],
+      "IntegrationExample": [
+        20990
+      ],
+      "Script": [
+        1818
+      ],
+      "StdStorage": [
+        3144
+      ],
+      "Test": [
+        3046
+      ],
+      "TestOracleLib": [
+        21255
+      ],
+      "Vm": [
+        4803
+      ],
+      "console": [
+        12867
+      ],
+      "console2": [
+        20931
+      ],
+      "stdError": [
+        3116
+      ],
+      "stdMath": [
+        4381
+      ],
+      "stdStorage": [
+        4234
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:2702:8",
+    "nodes": [
+      {
+        "id": 21070,
+        "nodeType": "PragmaDirective",
+        "src": "39:24:8",
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 21071,
+        "nodeType": "ImportDirective",
+        "src": "65:28:8",
+        "absolutePath": "lib/forge-std/src/Test.sol",
+        "file": "forge-std/Test.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 21256,
+        "sourceUnit": 4382,
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "id": 21073,
+        "nodeType": "ImportDirective",
+        "src": "94:69:8",
+        "absolutePath": "src/IntegrationExample.sol",
+        "file": "./../src/IntegrationExample.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 21256,
+        "sourceUnit": 20991,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 21072,
+              "name": "IntegrationExample",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 20990,
+              "src": "103:18:8",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 21075,
+        "nodeType": "ImportDirective",
+        "src": "164:67:8",
+        "absolutePath": "src/libraries/DiaOracleLib.sol",
+        "file": "./../src/libraries/DiaOracleLib.sol",
+        "nameLocation": "-1:-1:-1",
+        "scope": 21256,
+        "sourceUnit": 21069,
+        "symbolAliases": [
+          {
+            "foreign": {
+              "id": 21074,
+              "name": "DiaOracleLib",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": 21068,
+              "src": "173:12:8",
+              "typeDescriptions": {}
+            },
+            "nameLocation": "-1:-1:-1"
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "id": 21086,
+        "nodeType": "ContractDefinition",
+        "src": "407:99:8",
+        "nodes": [
+          {
+            "id": 21085,
+            "nodeType": "FunctionDefinition",
+            "src": "435:69:8",
+            "functionSelector": "960384a0",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getValue",
+            "nameLocation": "444:8:8",
+            "parameters": {
+              "id": 21079,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 21078,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 21085,
+                  "src": "453:13:8",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 21077,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "453:6:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "452:15:8"
+            },
+            "returnParameters": {
+              "id": 21084,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 21081,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 21085,
+                  "src": "486:7:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  },
+                  "typeName": {
+                    "id": 21080,
+                    "name": "uint128",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "486:7:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 21083,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 21085,
+                  "src": "495:7:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint128",
+                    "typeString": "uint128"
+                  },
+                  "typeName": {
+                    "id": 21082,
+                    "name": "uint128",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "495:7:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "485:18:8"
+            },
+            "scope": 21086,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IDiaOracleV2",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 21076,
+          "nodeType": "StructuredDocumentation",
+          "src": "233:172:8",
+          "text": " @title DiaOracle tests\n @dev Tests that the DiaLibrary library contract functions as expected\n aswell as testing of a simple contract that integrates the library"
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          21086
+        ],
+        "name": "IDiaOracleV2",
+        "nameLocation": "417:12:8",
+        "scope": 21256,
+        "usedErrors": []
+      },
+      {
+        "id": 21255,
+        "nodeType": "ContractDefinition",
+        "src": "508:2232:8",
+        "nodes": [
+          {
+            "id": 21091,
+            "nodeType": "VariableDeclaration",
+            "src": "545:69:8",
+            "constant": false,
+            "mutability": "immutable",
+            "name": "ORACLE",
+            "nameLocation": "563:6:8",
+            "scope": 21255,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 21089,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "545:7:8",
+              "stateMutability": "nonpayable",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": {
+              "hexValue": "307861393335343639343766333031356339383636393537353062386262456138653236443635383536",
+              "id": 21090,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "number",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "572:42:8",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              },
+              "value": "0xa93546947f3015c986695750b8bbEa8e26D65856"
+            },
+            "visibility": "internal"
+          },
+          {
+            "id": 21095,
+            "nodeType": "FunctionDefinition",
+            "src": "621:31:8",
+            "body": {
+              "id": 21094,
+              "nodeType": "Block",
+              "src": "645:7:8",
+              "statements": []
+            },
+            "functionSelector": "0a9254e4",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setUp",
+            "nameLocation": "630:5:8",
+            "parameters": {
+              "id": 21092,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "635:2:8"
+            },
+            "returnParameters": {
+              "id": 21093,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "645:0:8"
+            },
+            "scope": 21255,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 21122,
+            "nodeType": "FunctionDefinition",
+            "src": "787:242:8",
+            "body": {
+              "id": 21121,
+              "nodeType": "Block",
+              "src": "818:211:8",
+              "statements": [
+                {
+                  "assignments": [
+                    21100
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 21100,
+                      "mutability": "mutable",
+                      "name": "priceFromLib",
+                      "nameLocation": "836:12:8",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 21121,
+                      "src": "828:20:8",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint128",
+                        "typeString": "uint128"
+                      },
+                      "typeName": {
+                        "id": 21099,
+                        "name": "uint128",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "828:7:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint128",
+                          "typeString": "uint128"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 21106,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "id": 21103,
+                        "name": "ORACLE",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 21091,
+                        "src": "873:6:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "hexValue": "4554482f555344",
+                        "id": 21104,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "881:9:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_0b43555ace6b39aae1b894097d0a9fc17f504c62fea598fa206cc6f5088e6e45",
+                          "typeString": "literal_string \"ETH/USD\""
+                        },
+                        "value": "ETH/USD"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_0b43555ace6b39aae1b894097d0a9fc17f504c62fea598fa206cc6f5088e6e45",
+                          "typeString": "literal_string \"ETH/USD\""
+                        }
+                      ],
+                      "expression": {
+                        "id": 21101,
+                        "name": "DiaOracleLib",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 21068,
+                        "src": "851:12:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_DiaOracleLib_$21068_$",
+                          "typeString": "type(library DiaOracleLib)"
+                        }
+                      },
+                      "id": 21102,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "getPrice",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 21024,
+                      "src": "851:21:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_string_memory_ptr_$returns$_t_uint128_$",
+                        "typeString": "function (address,string memory) returns (uint128)"
+                      }
+                    },
+                    "id": 21105,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "851:40:8",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "828:63:8"
+                },
+                {
+                  "assignments": [
+                    21108,
+                    null
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 21108,
+                      "mutability": "mutable",
+                      "name": "priceFromOracle",
+                      "nameLocation": "911:15:8",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 21121,
+                      "src": "903:23:8",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint128",
+                        "typeString": "uint128"
+                      },
+                      "typeName": {
+                        "id": 21107,
+                        "name": "uint128",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "903:7:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint128",
+                          "typeString": "uint128"
+                        }
+                      },
+                      "visibility": "internal"
+                    },
+                    null
+                  ],
+                  "id": 21115,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "hexValue": "4554482f555344",
+                        "id": 21113,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "962:9:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_0b43555ace6b39aae1b894097d0a9fc17f504c62fea598fa206cc6f5088e6e45",
+                          "typeString": "literal_string \"ETH/USD\""
+                        },
+                        "value": "ETH/USD"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_0b43555ace6b39aae1b894097d0a9fc17f504c62fea598fa206cc6f5088e6e45",
+                          "typeString": "literal_string \"ETH/USD\""
+                        }
+                      ],
+                      "expression": {
+                        "arguments": [
+                          {
+                            "id": 21110,
+                            "name": "ORACLE",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 21091,
+                            "src": "945:6:8",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          ],
+                          "id": 21109,
+                          "name": "IDiaOracleV2",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 21086,
+                          "src": "932:12:8",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_contract$_IDiaOracleV2_$21086_$",
+                            "typeString": "type(contract IDiaOracleV2)"
+                          }
+                        },
+                        "id": 21111,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "932:20:8",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IDiaOracleV2_$21086",
+                          "typeString": "contract IDiaOracleV2"
+                        }
+                      },
+                      "id": 21112,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "getValue",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 21085,
+                      "src": "932:29:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_string_memory_ptr_$returns$_t_uint128_$_t_uint128_$",
+                        "typeString": "function (string memory) external returns (uint128,uint128)"
+                      }
+                    },
+                    "id": 21114,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "932:40:8",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$_t_uint128_$_t_uint128_$",
+                      "typeString": "tuple(uint128,uint128)"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "902:70:8"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 21117,
+                        "name": "priceFromLib",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 21100,
+                        "src": "992:12:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint128",
+                          "typeString": "uint128"
+                        }
+                      },
+                      {
+                        "id": 21118,
+                        "name": "priceFromOracle",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 21108,
+                        "src": "1006:15:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint128",
+                          "typeString": "uint128"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint128",
+                          "typeString": "uint128"
+                        },
+                        {
+                          "typeIdentifier": "t_uint128",
+                          "typeString": "uint128"
+                        }
+                      ],
+                      "id": 21116,
+                      "name": "assertEq",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        2449,
+                        2474,
+                        2487,
+                        2503,
+                        2545,
+                        2587,
+                        2624,
+                        2661,
+                        320,
+                        345,
+                        375,
+                        400,
+                        459,
+                        484,
+                        514,
+                        539,
+                        1639,
+                        1674
+                      ],
+                      "referencedDeclaration": 514,
+                      "src": "983:8:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$_t_uint256_$returns$__$",
+                        "typeString": "function (uint256,uint256)"
+                      }
+                    },
+                    "id": 21119,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "983:39:8",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 21120,
+                  "nodeType": "ExpressionStatement",
+                  "src": "983:39:8"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 21096,
+              "nodeType": "StructuredDocumentation",
+              "src": "658:124:8",
+              "text": " @dev Test that the price returned from using the library and directly\n calling the oracle are equal.\n "
+            },
+            "functionSelector": "2a888735",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "testGetPrice",
+            "nameLocation": "796:12:8",
+            "parameters": {
+              "id": 21097,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "808:2:8"
+            },
+            "returnParameters": {
+              "id": 21098,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "818:0:8"
+            },
+            "scope": 21255,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 21192,
+            "nodeType": "FunctionDefinition",
+            "src": "1217:680:8",
+            "body": {
+              "id": 21191,
+              "nodeType": "Block",
+              "src": "1286:611:8",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 21134,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 21128,
+                      "name": "maxTimePassed256",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 21125,
+                      "src": "1296:16:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [
+                        {
+                          "id": 21130,
+                          "name": "maxTimePassed256",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 21125,
+                          "src": "1321:16:8",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        {
+                          "hexValue": "31",
+                          "id": 21131,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "1339:1:8",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_1_by_1",
+                            "typeString": "int_const 1"
+                          },
+                          "value": "1"
+                        },
+                        {
+                          "hexValue": "3130303030",
+                          "id": 21132,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "number",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "1342:5:8",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_rational_10000_by_1",
+                            "typeString": "int_const 10000"
+                          },
+                          "value": "10000"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          {
+                            "typeIdentifier": "t_rational_1_by_1",
+                            "typeString": "int_const 1"
+                          },
+                          {
+                            "typeIdentifier": "t_rational_10000_by_1",
+                            "typeString": "int_const 10000"
+                          }
+                        ],
+                        "id": 21129,
+                        "name": "bound",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 2316,
+                        "src": "1315:5:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$_t_uint256_$_t_uint256_$returns$_t_uint256_$",
+                          "typeString": "function (uint256,uint256,uint256) returns (uint256)"
+                        }
+                      },
+                      "id": 21133,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "1315:33:8",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "1296:52:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 21135,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1296:52:8"
+                },
+                {
+                  "assignments": [
+                    21137
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 21137,
+                      "mutability": "mutable",
+                      "name": "maxTimePassed",
+                      "nameLocation": "1366:13:8",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 21191,
+                      "src": "1358:21:8",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint128",
+                        "typeString": "uint128"
+                      },
+                      "typeName": {
+                        "id": 21136,
+                        "name": "uint128",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "1358:7:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint128",
+                          "typeString": "uint128"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 21142,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "id": 21140,
+                        "name": "maxTimePassed256",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 21125,
+                        "src": "1390:16:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        }
+                      ],
+                      "id": 21139,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "lValueRequested": false,
+                      "nodeType": "ElementaryTypeNameExpression",
+                      "src": "1382:7:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_type$_t_uint128_$",
+                        "typeString": "type(uint128)"
+                      },
+                      "typeName": {
+                        "id": 21138,
+                        "name": "uint128",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "1382:7:8",
+                        "typeDescriptions": {}
+                      }
+                    },
+                    "id": 21141,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "typeConversion",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1382:25:8",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "1358:49:8"
+                },
+                {
+                  "assignments": [
+                    21144,
+                    21146
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 21144,
+                      "mutability": "mutable",
+                      "name": "priceFromLib",
+                      "nameLocation": "1427:12:8",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 21191,
+                      "src": "1419:20:8",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint128",
+                        "typeString": "uint128"
+                      },
+                      "typeName": {
+                        "id": 21143,
+                        "name": "uint128",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "1419:7:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint128",
+                          "typeString": "uint128"
+                        }
+                      },
+                      "visibility": "internal"
+                    },
+                    {
+                      "constant": false,
+                      "id": 21146,
+                      "mutability": "mutable",
+                      "name": "inTime",
+                      "nameLocation": "1446:6:8",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 21191,
+                      "src": "1441:11:8",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "typeName": {
+                        "id": 21145,
+                        "name": "bool",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "1441:4:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 21153,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "id": 21149,
+                        "name": "ORACLE",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 21091,
+                        "src": "1504:6:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      {
+                        "hexValue": "4554482f555344",
+                        "id": 21150,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1512:9:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_0b43555ace6b39aae1b894097d0a9fc17f504c62fea598fa206cc6f5088e6e45",
+                          "typeString": "literal_string \"ETH/USD\""
+                        },
+                        "value": "ETH/USD"
+                      },
+                      {
+                        "id": 21151,
+                        "name": "maxTimePassed",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 21137,
+                        "src": "1523:13:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint128",
+                          "typeString": "uint128"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        {
+                          "typeIdentifier": "t_stringliteral_0b43555ace6b39aae1b894097d0a9fc17f504c62fea598fa206cc6f5088e6e45",
+                          "typeString": "literal_string \"ETH/USD\""
+                        },
+                        {
+                          "typeIdentifier": "t_uint128",
+                          "typeString": "uint128"
+                        }
+                      ],
+                      "expression": {
+                        "id": 21147,
+                        "name": "DiaOracleLib",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 21068,
+                        "src": "1468:12:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_contract$_DiaOracleLib_$21068_$",
+                          "typeString": "type(library DiaOracleLib)"
+                        }
+                      },
+                      "id": 21148,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "getPriceIfNotOlderThan",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 21067,
+                      "src": "1468:35:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_string_memory_ptr_$_t_uint128_$returns$_t_uint128_$_t_bool_$",
+                        "typeString": "function (address,string memory,uint128) returns (uint128,bool)"
+                      }
+                    },
+                    "id": 21152,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1468:69:8",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$_t_uint128_$_t_bool_$",
+                      "typeString": "tuple(uint128,bool)"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "1418:119:8"
+                },
+                {
+                  "assignments": [
+                    21155,
+                    21157
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 21155,
+                      "mutability": "mutable",
+                      "name": "priceFromOracle",
+                      "nameLocation": "1558:15:8",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 21191,
+                      "src": "1550:23:8",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint128",
+                        "typeString": "uint128"
+                      },
+                      "typeName": {
+                        "id": 21154,
+                        "name": "uint128",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "1550:7:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint128",
+                          "typeString": "uint128"
+                        }
+                      },
+                      "visibility": "internal"
+                    },
+                    {
+                      "constant": false,
+                      "id": 21157,
+                      "mutability": "mutable",
+                      "name": "oracleTimestamp",
+                      "nameLocation": "1583:15:8",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 21191,
+                      "src": "1575:23:8",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint128",
+                        "typeString": "uint128"
+                      },
+                      "typeName": {
+                        "id": 21156,
+                        "name": "uint128",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "1575:7:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint128",
+                          "typeString": "uint128"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 21164,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "hexValue": "4554482f555344",
+                        "id": 21162,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1644:9:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_0b43555ace6b39aae1b894097d0a9fc17f504c62fea598fa206cc6f5088e6e45",
+                          "typeString": "literal_string \"ETH/USD\""
+                        },
+                        "value": "ETH/USD"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_0b43555ace6b39aae1b894097d0a9fc17f504c62fea598fa206cc6f5088e6e45",
+                          "typeString": "literal_string \"ETH/USD\""
+                        }
+                      ],
+                      "expression": {
+                        "arguments": [
+                          {
+                            "id": 21159,
+                            "name": "ORACLE",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 21091,
+                            "src": "1627:6:8",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          ],
+                          "id": 21158,
+                          "name": "IDiaOracleV2",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 21086,
+                          "src": "1614:12:8",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_contract$_IDiaOracleV2_$21086_$",
+                            "typeString": "type(contract IDiaOracleV2)"
+                          }
+                        },
+                        "id": 21160,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "1614:20:8",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IDiaOracleV2_$21086",
+                          "typeString": "contract IDiaOracleV2"
+                        }
+                      },
+                      "id": 21161,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "getValue",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 21085,
+                      "src": "1614:29:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_string_memory_ptr_$returns$_t_uint128_$_t_uint128_$",
+                        "typeString": "function (string memory) external returns (uint128,uint128)"
+                      }
+                    },
+                    "id": 21163,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1614:40:8",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$_t_uint128_$_t_uint128_$",
+                      "typeString": "tuple(uint128,uint128)"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "1549:105:8"
+                },
+                {
+                  "assignments": [
+                    21166
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 21166,
+                      "mutability": "mutable",
+                      "name": "inTimeOracle",
+                      "nameLocation": "1671:12:8",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 21191,
+                      "src": "1666:17:8",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      },
+                      "typeName": {
+                        "id": 21165,
+                        "name": "bool",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "1666:4:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 21167,
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "1666:17:8"
+                },
+                {
+                  "condition": {
+                    "commonType": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    },
+                    "id": 21174,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftExpression": {
+                      "components": [
+                        {
+                          "commonType": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          },
+                          "id": 21171,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftExpression": {
+                            "expression": {
+                              "id": 21168,
+                              "name": "block",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": -4,
+                              "src": "1699:5:8",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_magic_block",
+                                "typeString": "block"
+                              }
+                            },
+                            "id": 21169,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "timestamp",
+                            "nodeType": "MemberAccess",
+                            "src": "1699:15:8",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint256",
+                              "typeString": "uint256"
+                            }
+                          },
+                          "nodeType": "BinaryOperation",
+                          "operator": "-",
+                          "rightExpression": {
+                            "id": 21170,
+                            "name": "oracleTimestamp",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 21157,
+                            "src": "1717:15:8",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_uint128",
+                              "typeString": "uint128"
+                            }
+                          },
+                          "src": "1699:33:8",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        }
+                      ],
+                      "id": 21172,
+                      "isConstant": false,
+                      "isInlineArray": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "TupleExpression",
+                      "src": "1698:35:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "BinaryOperation",
+                    "operator": "<",
+                    "rightExpression": {
+                      "id": 21173,
+                      "name": "maxTimePassed",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 21137,
+                      "src": "1736:13:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint128",
+                        "typeString": "uint128"
+                      }
+                    },
+                    "src": "1698:51:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "falseBody": {
+                    "id": 21184,
+                    "nodeType": "Block",
+                    "src": "1802:47:8",
+                    "statements": [
+                      {
+                        "expression": {
+                          "id": 21182,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "id": 21180,
+                            "name": "inTimeOracle",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 21166,
+                            "src": "1817:12:8",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "hexValue": "66616c7365",
+                            "id": 21181,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "bool",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "1832:5:8",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            },
+                            "value": "false"
+                          },
+                          "src": "1817:20:8",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "id": 21183,
+                        "nodeType": "ExpressionStatement",
+                        "src": "1817:20:8"
+                      }
+                    ]
+                  },
+                  "id": 21185,
+                  "nodeType": "IfStatement",
+                  "src": "1695:154:8",
+                  "trueBody": {
+                    "id": 21179,
+                    "nodeType": "Block",
+                    "src": "1750:46:8",
+                    "statements": [
+                      {
+                        "expression": {
+                          "id": 21177,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "id": 21175,
+                            "name": "inTimeOracle",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 21166,
+                            "src": "1765:12:8",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "hexValue": "74727565",
+                            "id": 21176,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "bool",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "1780:4:8",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            },
+                            "value": "true"
+                          },
+                          "src": "1765:19:8",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "id": 21178,
+                        "nodeType": "ExpressionStatement",
+                        "src": "1765:19:8"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 21187,
+                        "name": "inTimeOracle",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 21166,
+                        "src": "1869:12:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      },
+                      {
+                        "id": 21188,
+                        "name": "inTime",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 21146,
+                        "src": "1883:6:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        },
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 21186,
+                      "name": "assertEq",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        2449,
+                        2474,
+                        2487,
+                        2503,
+                        2545,
+                        2587,
+                        2624,
+                        2661,
+                        320,
+                        345,
+                        375,
+                        400,
+                        459,
+                        484,
+                        514,
+                        539,
+                        1639,
+                        1674
+                      ],
+                      "referencedDeclaration": 2449,
+                      "src": "1860:8:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_bool_$_t_bool_$returns$__$",
+                        "typeString": "function (bool,bool)"
+                      }
+                    },
+                    "id": 21189,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1860:30:8",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 21190,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1860:30:8"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 21123,
+              "nodeType": "StructuredDocumentation",
+              "src": "1035:177:8",
+              "text": " @dev Fuzzy test that checks if the bool returned from getPriceIfNotOlderThan is correct.\n random sample of 256 values between 1 and 10000000 are tested."
+            },
+            "functionSelector": "622de739",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "testGetPriceIfNotOlderThan",
+            "nameLocation": "1226:26:8",
+            "parameters": {
+              "id": 21126,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 21125,
+                  "mutability": "mutable",
+                  "name": "maxTimePassed256",
+                  "nameLocation": "1261:16:8",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 21192,
+                  "src": "1253:24:8",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 21124,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1253:7:8",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1252:26:8"
+            },
+            "returnParameters": {
+              "id": 21127,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1286:0:8"
+            },
+            "scope": 21255,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 21220,
+            "nodeType": "FunctionDefinition",
+            "src": "2078:231:8",
+            "body": {
+              "id": 21219,
+              "nodeType": "Block",
+              "src": "2119:190:8",
+              "statements": [
+                {
+                  "assignments": [
+                    21198
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 21198,
+                      "mutability": "mutable",
+                      "name": "iExample",
+                      "nameLocation": "2149:8:8",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 21219,
+                      "src": "2130:27:8",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IntegrationExample_$20990",
+                        "typeString": "contract IntegrationExample"
+                      },
+                      "typeName": {
+                        "id": 21197,
+                        "nodeType": "UserDefinedTypeName",
+                        "pathNode": {
+                          "id": 21196,
+                          "name": "IntegrationExample",
+                          "nodeType": "IdentifierPath",
+                          "referencedDeclaration": 20990,
+                          "src": "2130:18:8"
+                        },
+                        "referencedDeclaration": 20990,
+                        "src": "2130:18:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IntegrationExample_$20990",
+                          "typeString": "contract IntegrationExample"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 21203,
+                  "initialValue": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 21201,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "NewExpression",
+                      "src": "2160:22:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_IntegrationExample_$20990_$",
+                        "typeString": "function () returns (contract IntegrationExample)"
+                      },
+                      "typeName": {
+                        "id": 21200,
+                        "nodeType": "UserDefinedTypeName",
+                        "pathNode": {
+                          "id": 21199,
+                          "name": "IntegrationExample",
+                          "nodeType": "IdentifierPath",
+                          "referencedDeclaration": 20990,
+                          "src": "2164:18:8"
+                        },
+                        "referencedDeclaration": 20990,
+                        "src": "2164:18:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IntegrationExample_$20990",
+                          "typeString": "contract IntegrationExample"
+                        }
+                      }
+                    },
+                    "id": 21202,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2160:24:8",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IntegrationExample_$20990",
+                      "typeString": "contract IntegrationExample"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "2130:54:8"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "expression": {
+                          "expression": {
+                            "id": 21207,
+                            "name": "IntegrationExample",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 20990,
+                            "src": "2211:18:8",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_contract$_IntegrationExample_$20990_$",
+                              "typeString": "type(contract IntegrationExample)"
+                            }
+                          },
+                          "id": 21208,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "PriceTooOld",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 20938,
+                          "src": "2211:30:8",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_function_error_pure$__$returns$__$",
+                            "typeString": "function () pure"
+                          }
+                        },
+                        "id": 21209,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "memberName": "selector",
+                        "nodeType": "MemberAccess",
+                        "src": "2211:39:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes4",
+                          "typeString": "bytes4"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bytes4",
+                          "typeString": "bytes4"
+                        }
+                      ],
+                      "expression": {
+                        "id": 21204,
+                        "name": "vm",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 1817,
+                        "src": "2195:2:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_Vm_$4803",
+                          "typeString": "contract Vm"
+                        }
+                      },
+                      "id": 21206,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "expectRevert",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 4641,
+                      "src": "2195:15:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_bytes4_$returns$__$",
+                        "typeString": "function (bytes4) external"
+                      }
+                    },
+                    "id": 21210,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2195:56:8",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 21211,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2195:56:8"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "hexValue": "4554482f555344",
+                        "id": 21215,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "2288:9:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_0b43555ace6b39aae1b894097d0a9fc17f504c62fea598fa206cc6f5088e6e45",
+                          "typeString": "literal_string \"ETH/USD\""
+                        },
+                        "value": "ETH/USD"
+                      },
+                      {
+                        "hexValue": "31",
+                        "id": 21216,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "2299:1:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_1_by_1",
+                          "typeString": "int_const 1"
+                        },
+                        "value": "1"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_0b43555ace6b39aae1b894097d0a9fc17f504c62fea598fa206cc6f5088e6e45",
+                          "typeString": "literal_string \"ETH/USD\""
+                        },
+                        {
+                          "typeIdentifier": "t_rational_1_by_1",
+                          "typeString": "int_const 1"
+                        }
+                      ],
+                      "expression": {
+                        "id": 21212,
+                        "name": "iExample",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 21198,
+                        "src": "2261:8:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IntegrationExample_$20990",
+                          "typeString": "contract IntegrationExample"
+                        }
+                      },
+                      "id": 21214,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "exampleCheckPrice",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 20989,
+                      "src": "2261:26:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_string_memory_ptr_$_t_uint128_$returns$_t_uint128_$",
+                        "typeString": "function (string memory,uint128) external returns (uint128)"
+                      }
+                    },
+                    "id": 21217,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2261:40:8",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "id": 21218,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2261:40:8"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 21193,
+              "nodeType": "StructuredDocumentation",
+              "src": "1903:170:8",
+              "text": " @dev Test that the IntegraionExample contract reverts with the expected error\n if maxTimePassed is smaller than time passed since last price update."
+            },
+            "functionSelector": "873ae465",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "testIntegrationExample",
+            "nameLocation": "2087:22:8",
+            "parameters": {
+              "id": 21194,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2109:2:8"
+            },
+            "returnParameters": {
+              "id": 21195,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2119:0:8"
+            },
+            "scope": 21255,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 21254,
+            "nodeType": "FunctionDefinition",
+            "src": "2410:328:8",
+            "body": {
+              "id": 21253,
+              "nodeType": "Block",
+              "src": "2459:279:8",
+              "statements": [
+                {
+                  "assignments": [
+                    21226
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 21226,
+                      "mutability": "mutable",
+                      "name": "iExample",
+                      "nameLocation": "2488:8:8",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 21253,
+                      "src": "2469:27:8",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_IntegrationExample_$20990",
+                        "typeString": "contract IntegrationExample"
+                      },
+                      "typeName": {
+                        "id": 21225,
+                        "nodeType": "UserDefinedTypeName",
+                        "pathNode": {
+                          "id": 21224,
+                          "name": "IntegrationExample",
+                          "nodeType": "IdentifierPath",
+                          "referencedDeclaration": 20990,
+                          "src": "2469:18:8"
+                        },
+                        "referencedDeclaration": 20990,
+                        "src": "2469:18:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IntegrationExample_$20990",
+                          "typeString": "contract IntegrationExample"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 21231,
+                  "initialValue": {
+                    "arguments": [],
+                    "expression": {
+                      "argumentTypes": [],
+                      "id": 21229,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "nodeType": "NewExpression",
+                      "src": "2499:22:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_creation_nonpayable$__$returns$_t_contract$_IntegrationExample_$20990_$",
+                        "typeString": "function () returns (contract IntegrationExample)"
+                      },
+                      "typeName": {
+                        "id": 21228,
+                        "nodeType": "UserDefinedTypeName",
+                        "pathNode": {
+                          "id": 21227,
+                          "name": "IntegrationExample",
+                          "nodeType": "IdentifierPath",
+                          "referencedDeclaration": 20990,
+                          "src": "2503:18:8"
+                        },
+                        "referencedDeclaration": 20990,
+                        "src": "2503:18:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IntegrationExample_$20990",
+                          "typeString": "contract IntegrationExample"
+                        }
+                      }
+                    },
+                    "id": 21230,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2499:24:8",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_IntegrationExample_$20990",
+                      "typeString": "contract IntegrationExample"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "2469:54:8"
+                },
+                {
+                  "assignments": [
+                    21233
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 21233,
+                      "mutability": "mutable",
+                      "name": "priceFromIExample",
+                      "nameLocation": "2541:17:8",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 21253,
+                      "src": "2533:25:8",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint128",
+                        "typeString": "uint128"
+                      },
+                      "typeName": {
+                        "id": 21232,
+                        "name": "uint128",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "2533:7:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint128",
+                          "typeString": "uint128"
+                        }
+                      },
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 21238,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "hexValue": "4554482f555344",
+                        "id": 21236,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "2586:9:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_0b43555ace6b39aae1b894097d0a9fc17f504c62fea598fa206cc6f5088e6e45",
+                          "typeString": "literal_string \"ETH/USD\""
+                        },
+                        "value": "ETH/USD"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_0b43555ace6b39aae1b894097d0a9fc17f504c62fea598fa206cc6f5088e6e45",
+                          "typeString": "literal_string \"ETH/USD\""
+                        }
+                      ],
+                      "expression": {
+                        "id": 21234,
+                        "name": "iExample",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 21226,
+                        "src": "2561:8:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IntegrationExample_$20990",
+                          "typeString": "contract IntegrationExample"
+                        }
+                      },
+                      "id": 21235,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "exampleGetPrice",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 20956,
+                      "src": "2561:24:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_string_memory_ptr_$returns$_t_uint128_$",
+                        "typeString": "function (string memory) external returns (uint128)"
+                      }
+                    },
+                    "id": 21237,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2561:35:8",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint128",
+                      "typeString": "uint128"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "2533:63:8"
+                },
+                {
+                  "assignments": [
+                    21240,
+                    null
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 21240,
+                      "mutability": "mutable",
+                      "name": "priceFromOracle",
+                      "nameLocation": "2615:15:8",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 21253,
+                      "src": "2607:23:8",
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint128",
+                        "typeString": "uint128"
+                      },
+                      "typeName": {
+                        "id": 21239,
+                        "name": "uint128",
+                        "nodeType": "ElementaryTypeName",
+                        "src": "2607:7:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint128",
+                          "typeString": "uint128"
+                        }
+                      },
+                      "visibility": "internal"
+                    },
+                    null
+                  ],
+                  "id": 21247,
+                  "initialValue": {
+                    "arguments": [
+                      {
+                        "hexValue": "4554482f555344",
+                        "id": 21245,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "string",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "2666:9:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_stringliteral_0b43555ace6b39aae1b894097d0a9fc17f504c62fea598fa206cc6f5088e6e45",
+                          "typeString": "literal_string \"ETH/USD\""
+                        },
+                        "value": "ETH/USD"
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_stringliteral_0b43555ace6b39aae1b894097d0a9fc17f504c62fea598fa206cc6f5088e6e45",
+                          "typeString": "literal_string \"ETH/USD\""
+                        }
+                      ],
+                      "expression": {
+                        "arguments": [
+                          {
+                            "id": 21242,
+                            "name": "ORACLE",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 21091,
+                            "src": "2649:6:8",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": [
+                            {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          ],
+                          "id": 21241,
+                          "name": "IDiaOracleV2",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 21086,
+                          "src": "2636:12:8",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_contract$_IDiaOracleV2_$21086_$",
+                            "typeString": "type(contract IDiaOracleV2)"
+                          }
+                        },
+                        "id": 21243,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "typeConversion",
+                        "lValueRequested": false,
+                        "names": [],
+                        "nodeType": "FunctionCall",
+                        "src": "2636:20:8",
+                        "tryCall": false,
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_contract$_IDiaOracleV2_$21086",
+                          "typeString": "contract IDiaOracleV2"
+                        }
+                      },
+                      "id": 21244,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "getValue",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 21085,
+                      "src": "2636:29:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_external_nonpayable$_t_string_memory_ptr_$returns$_t_uint128_$_t_uint128_$",
+                        "typeString": "function (string memory) external returns (uint128,uint128)"
+                      }
+                    },
+                    "id": 21246,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2636:40:8",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$_t_uint128_$_t_uint128_$",
+                      "typeString": "tuple(uint128,uint128)"
+                    }
+                  },
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "2606:70:8"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "id": 21249,
+                        "name": "priceFromIExample",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 21233,
+                        "src": "2696:17:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint128",
+                          "typeString": "uint128"
+                        }
+                      },
+                      {
+                        "id": 21250,
+                        "name": "priceFromOracle",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 21240,
+                        "src": "2715:15:8",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint128",
+                          "typeString": "uint128"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_uint128",
+                          "typeString": "uint128"
+                        },
+                        {
+                          "typeIdentifier": "t_uint128",
+                          "typeString": "uint128"
+                        }
+                      ],
+                      "id": 21248,
+                      "name": "assertEq",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        2449,
+                        2474,
+                        2487,
+                        2503,
+                        2545,
+                        2587,
+                        2624,
+                        2661,
+                        320,
+                        345,
+                        375,
+                        400,
+                        459,
+                        484,
+                        514,
+                        539,
+                        1639,
+                        1674
+                      ],
+                      "referencedDeclaration": 514,
+                      "src": "2687:8:8",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$_t_uint256_$returns$__$",
+                        "typeString": "function (uint256,uint256)"
+                      }
+                    },
+                    "id": 21251,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "2687:44:8",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 21252,
+                  "nodeType": "ExpressionStatement",
+                  "src": "2687:44:8"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 21221,
+              "nodeType": "StructuredDocumentation",
+              "src": "2315:90:8",
+              "text": " @dev Test that the IntegrationExample contract returns the correct price."
+            },
+            "functionSelector": "2be102f1",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "testIntegrationExampleGetPrice",
+            "nameLocation": "2419:30:8",
+            "parameters": {
+              "id": 21222,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2449:2:8"
+            },
+            "returnParameters": {
+              "id": 21223,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "2459:0:8"
+            },
+            "scope": 21255,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [
+          {
+            "baseName": {
+              "id": 21087,
+              "name": "Test",
+              "nodeType": "IdentifierPath",
+              "referencedDeclaration": 3046,
+              "src": "534:4:8"
+            },
+            "id": 21088,
+            "nodeType": "InheritanceSpecifier",
+            "src": "534:4:8"
+          }
+        ],
+        "canonicalName": "TestOracleLib",
+        "contractDependencies": [
+          20990
+        ],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          21255,
+          3046,
+          1818,
+          1786
+        ],
+        "name": "TestOracleLib",
+        "nameLocation": "517:13:8",
+        "scope": 21256,
+        "usedErrors": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 8
+}
