@@ -6,36 +6,24 @@ interface IDiaOracleV2{
     function getValue(string memory) external returns (uint128, uint128);
 }
 
-interface IDiaOracleV1 {
-    function getCoinInfo(string memory) external returns (uint256, uint256, uint256, string memory);
-}
-
 library DiaOracleLib  {
+    address immutable ORACLE = 0xa93546947f3015c986695750b8bbEa8e26D65856;
 
-    function getPriceV1(address _oracle, string memory key) internal returns (uint256 price){
-        (price, , , ) = IDiaOracleV1(_oracle).getCoinInfo(key);
+    function getPrice(string memory key) internal returns (uint128 price){
+        (price, ) = IDiaOracleV2(ORACLE).getValue(key);
     }
 
-    function getPriceIfNotOlderThanV1(
-        address _oracle,
+    function getPriceIfNotOlderThan(
         string memory key,
-        uint256 _timeConstraint
+        uint128 _timeConstraint
         )
         internal
-        returns (uint256 price, bool inTime)
+        returns (uint128 price, bool inTime)
     {
-        uint256 lastTimestamp;
-        (price, lastTimestamp, , ) = IDiaOracleV1(_oracle).getCoinInfo(key);
-        inTime = ( (block.timestamp - _timeConstraint) > lastTimestamp) ? true : false;
-    }
 
-    function getPriceV2(address _oracle, string memory key) internal returns (uint128 price){
-        (price, ) = IDiaOracleV2(_oracle).getValue(key);
-    }
-
-    function getPriceIfNotOlderThanV2(address _oracle, string memory key, uint128 _timeConstraint) internal returns (uint128 price, bool inTime){
         uint128 lastTimestamp;
-        (price, lastTimestamp ) = IDiaOracleV2(_oracle).getValue(key);
+        (price, lastTimestamp ) = IDiaOracleV2(ORACLE).getValue(key);
         inTime = ( (block.timestamp - _timeConstraint) > lastTimestamp) ? true : false;
     }
+
 }
