@@ -2,18 +2,18 @@
 
 pragma solidity ^0.8.13;
 
-interface IDiaOracleV2{
+interface IDIAOracleV2{
     function getValue(string memory) external returns (uint128, uint128);
 }
 
 /**
-* @title Integration Library contract for DiaOracleV2
+* @title Integration Library contract for DIAOracleV2
 * @dev This Library contract can be used on all EVM
-* chains with a deployed DiaOracleV2 contract. See
+* chains with a deployed DIAOracleV2 contract. See
 * doc.diadata.org for supported chains.
 */
 
-library DiaOracleLib  {
+library DIAOracleLib  {
 
     /**
     * @dev Returns the oracle data price
@@ -22,7 +22,7 @@ library DiaOracleLib  {
     * @return price - The price of the asset specified. 
     */
     function getPrice(address oracle, string memory key) internal returns (uint128 price){
-        (price, ) = IDiaOracleV2(oracle).getValue(key);
+        (price, ) = IDIAOracleV2(oracle).getValue(key);
     }
 
     /**
@@ -44,7 +44,7 @@ library DiaOracleLib  {
         returns (uint128 price, bool inTime)
     {
         uint128 oracleTimestamp;
-        (price, oracleTimestamp ) = IDiaOracleV2(oracle).getValue(key);
+        (price, oracleTimestamp ) = IDIAOracleV2(oracle).getValue(key);
         inTime = ((block.timestamp - oracleTimestamp) < maxTimePassed) ? true : false;
 
     }
