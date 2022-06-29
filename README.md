@@ -55,7 +55,7 @@ Return Values:
 
 # Integration Example 
 
-A contract, IntegrationExample, is provided to show you how to integrate DIAOracleLib in your own contracts. 
+A contract, [IntegrationExample](https://github.com/tajobin/DIAOracleLib/blob/main/src/IntegrationExample.sol), is provided to show you how to integrate DIAOracleLib in your own contracts. 
 
 Start by importing the library in your own contract:
 
