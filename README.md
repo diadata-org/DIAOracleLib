@@ -1,4 +1,4 @@
-# DiaOracleLib
+# DIAOracleLib
 
 A Library to facilitate integration of DIA oracles in your own
 contracts. The library consists of two functions, ```getPrice``` and ```getPriceIfNotOlderThan```.
@@ -22,7 +22,7 @@ Return Values:
 
 | Name  | Type   | Description                                            |
 |-------|--------|--------------------------------------------------------|
-| Price | uin128 | Price of the specified asset returned by the DiaOracle |
+| Price | uint128 | Price of the specified asset returned by the DIAOracle |
 
 
 ## getPriceIfNotOlderThan
@@ -50,5 +50,5 @@ Return Values:
 
 | Name  | Type   | Description                                            |
 |-------|--------|--------------------------------------------------------|
-| Price | uin128 | Price of the specified asset returned by the DiaOracle |
-| inTime| uin128 |  A boolian that is ```true``` if the price was updated at most maxTimePassed seconds ago, otherwise ```false```|
+| Price | uint128 | Price of the specified asset returned by the DIAOracle |
+| inTime| uint128 |  A boolian that is ```true``` if the price was updated at most maxTimePassed seconds ago, otherwise ```false```|
