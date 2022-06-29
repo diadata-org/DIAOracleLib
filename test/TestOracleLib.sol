@@ -41,10 +41,10 @@ contract TestOracleLib is Test {
         maxTimePassed256 = bound(maxTimePassed256, 1, 10000);
         uint128 maxTimePassed = uint128(maxTimePassed256);
 
-        (uint128 priceFromLib, bool inTime) =
+        (, bool inTime) =
             DIAOracleLib.getPriceIfNotOlderThan(ORACLE, "ETH/USD", maxTimePassed);
 
-         (uint128 priceFromOracle, uint128 oracleTimestamp) =
+         (, uint128 oracleTimestamp) =
             IDIAOracleV2(ORACLE).getValue("ETH/USD");
 
          bool inTimeOracle;
