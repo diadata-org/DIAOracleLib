@@ -3,15 +3,15 @@ pragma solidity ^0.8.13;
 
 import "forge-std/Test.sol";
 import { IntegrationExample } from "./../src/IntegrationExample.sol";
-import { DiaOracleLib } from "./../src/libraries/DiaOracleLib.sol";
+import { DIAOracleLib } from "./../src/libraries/DIAOracleLib.sol";
 
 /**
-* @title DiaOracle tests
-* @dev Tests that the DiaLibrary library contract functions as expected
+* @title DIAOracle tests
+* @dev Tests that the DIALibrary library contract functions as expected
 * aswell as testing of a simple contract that integrates the library
 */
 
-interface IDiaOracleV2{
+interface IDIAOracleV2{
     function getValue(string memory) external returns (uint128, uint128);
 }
 
@@ -26,9 +26,9 @@ contract TestOracleLib is Test {
     * calling the oracle are equal.
     * */
     function testGetPrice() public {
-        uint128 priceFromLib = DiaOracleLib.getPrice(ORACLE, "ETH/USD");
+        uint128 priceFromLib = DIAOracleLib.getPrice(ORACLE, "ETH/USD");
 
-        (uint128 priceFromOracle, ) = IDiaOracleV2(ORACLE).getValue("ETH/USD");
+        (uint128 priceFromOracle, ) = IDIAOracleV2(ORACLE).getValue("ETH/USD");
 
         assertEq(priceFromLib, priceFromOracle);
     }
@@ -42,10 +42,10 @@ contract TestOracleLib is Test {
         uint128 maxTimePassed = uint128(maxTimePassed256);
 
         (uint128 priceFromLib, bool inTime) =
-            DiaOracleLib.getPriceIfNotOlderThan(ORACLE, "ETH/USD", maxTimePassed);
+            DIAOracleLib.getPriceIfNotOlderThan(ORACLE, "ETH/USD", maxTimePassed);
 
          (uint128 priceFromOracle, uint128 oracleTimestamp) =
-            IDiaOracleV2(ORACLE).getValue("ETH/USD");
+            IDIAOracleV2(ORACLE).getValue("ETH/USD");
 
          bool inTimeOracle;
 
@@ -77,7 +77,7 @@ contract TestOracleLib is Test {
     function testIntegrationExampleGetPrice() public {
         IntegrationExample iExample = new IntegrationExample();
         uint128 priceFromIExample = iExample.exampleGetPrice("ETH/USD");
-        (uint128 priceFromOracle, ) = IDiaOracleV2(ORACLE).getValue("ETH/USD");
+        (uint128 priceFromOracle, ) = IDIAOracleV2(ORACLE).getValue("ETH/USD");
 
         assertEq(priceFromIExample, priceFromOracle);
     }

@@ -2,10 +2,10 @@
 
 pragma solidity ^0.8.13;
 
-import {DiaOracleLib} from "./libraries/DiaOracleLib.sol";
+import {DIAOracleLib} from "./libraries/DIAOracleLib.sol";
 
 /**
-* @title Example contract showing how DiaOracleLib can be used
+* @title Example contract showing how DIAOracleLib can be used
 */
 contract IntegrationExample{
     error PriceTooOld();
@@ -14,15 +14,15 @@ contract IntegrationExample{
 
     /**
     * @dev To get the price of an asset use the getPrice function in
-    * the DiaOracleLib Library with an oracle address and a key.
+    * the DIAOracleLib Library with an oracle address and a key.
     */
     function exampleGetPrice(string memory key) external returns (uint128){
-        return DiaOracleLib.getPrice(ORACLE, key);
+        return DIAOracleLib.getPrice(ORACLE, key);
     }
 
     /**
     * @dev To assess if the price has been updated recently use the 
-    * getPriceNotOlderThan function in the DiaOracleLib Library. 
+    * getPriceNotOlderThan function in the DIAOracleLib Library. 
     *
     * In this example we chose to revert if the price was updated
     * longer than maxTimePassed seconds ago.
@@ -33,7 +33,7 @@ contract IntegrationExample{
     {
 
         bool inTime;
-        (price, inTime) = DiaOracleLib.getPriceIfNotOlderThan(ORACLE, key, maxTimePassed);
+        (price, inTime) = DIAOracleLib.getPriceIfNotOlderThan(ORACLE, key, maxTimePassed);
 
         if (!inTime) revert PriceTooOld();
 
