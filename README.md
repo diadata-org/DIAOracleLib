@@ -52,6 +52,7 @@ Return Values:
 |-------|--------|--------------------------------------------------------|
 | Price | uint128 | Price of the specified asset returned by the DIAOracle |
 | inTime| uint128 |  A boolian that is ```true``` if the price was updated at most maxTimePassed seconds ago, otherwise ```false```|
+<<<<<<< HEAD
 
 # Integration Example 
 
@@ -101,3 +102,5 @@ Provide your own RCP_URL to fork mainnet, you can get one from a provider such a
 
 In the tests provided we are forking Ethereum mainnet. If you wish to run these tests on another network, change the ORACLE address in TestOracleLib and IntegrationExample to an address of a deployed DIAOracleV2 contract and provide a RCP_URL to the network. 
 
+=======
+>>>>>>> parent of 6e17ed8 (Adding contract and tests)
