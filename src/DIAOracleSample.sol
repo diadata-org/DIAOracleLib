@@ -44,7 +44,5 @@ contract DIAOracleSample {
         );
 
         if (!inTime) revert PriceTooOld();
-
-        return price;
     }
 }
